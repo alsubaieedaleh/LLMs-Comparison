@@ -20,9 +20,6 @@ export class ChatComponent {
   messages3: { sender: string, text: string ,score: number }[] = [
     { sender: 'bot', text: 'Hello! How can I assist you today?',  score: 0 }
   ];
-  messagesL: { sender: string, text: string ,score: number }[] = [
-    { sender: 'bot', text: 'Hello! How can I assist you today?',  score: 0 }
-  ];
 
   constructor(private chatService: ChatService) {}
 
@@ -34,7 +31,6 @@ export class ChatComponent {
     // Add user message to messages array
     this.messages4.push({ sender: 'user', text: this.userInput ,score: 0});
     this.messages3.push({ sender: 'user', text: this.userInput, score: 0 });
-    this.messagesL.push({ sender: 'user', text: this.userInput, score: 0 });
   
     // Store the user input locally
     const userMessage = this.userInput;
@@ -52,9 +48,6 @@ export class ChatComponent {
       const response3 = await this.chatService.sendMessage("3"+'/'+userMessage);
       // Add bot response to messages array
       this.messages3.push({ sender: 'bot', text: response3.response , score: response3.score});
-      const responseL = await this.chatService.sendMessage("L"+'/'+userMessage);
-      // Add bot response to messages array
-      this.messagesL.push({ sender: 'bot', text: responseL.response , score: responseL.score});
     } catch (error) {
       console.error(error);
     }
