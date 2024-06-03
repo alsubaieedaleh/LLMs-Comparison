@@ -183,6 +183,5 @@ class Chat3(Resource):
         return jsonify({"response": response, "score": score})
 api.add_resource(Chat3,"/Chat3/<string:query>")
 
-
 if __name__ == '__main__':
     app.run(debug=True) 
