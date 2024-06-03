@@ -21,15 +21,6 @@
         </div>
       </div>
     </div>
-    <div class="chat-body" id="chat-body">
-      <h1> Falcon-40b-instruct</h1>
-      
-      <div *ngFor="let message of messagesL" [ngClass]="{'user': message.sender === 'user', 'bot': message.sender === 'bot'}" class="message">
-        <div class="content">{{ message.text }}
-          <div class="score">Score: {{ message.score }}</div>
-        </div>
-      </div>
-    </div>
   </div>
   <div class="chat-footer">
     <input type="text" [(ngModel)]="userInput" placeholder="Type your message here..." (keyup.enter)="sendMessage()">
