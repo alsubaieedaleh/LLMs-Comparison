@@ -19,5 +19,5 @@ python main.py
 Access the frontend interface:
 Open your browser and navigate to https://llms-comparison.netlify.app/
 
-##Note
+# Note
 Due to time constraints, only a limited number of models are included in this project. If time permits, additional models like Llama-2-70b-chat and Falcon-40b-instruct may be added in the future.
