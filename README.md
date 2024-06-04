@@ -2,21 +2,15 @@
 
 This project compares various Language Models (LLMs) using a Flask backend and a frontend(Angular) interface.
 
-Installation
-Clone the repository:
-
-
+# Installation
+## Clone the repository:
 git clone https://github.com/your-username/LLMs-Comparison.git
-Install dependencies:
-
-
+## Install dependencies:
 pip install -r requirements.txt
-Running the App
+## Running the App
 Run the Flask app:
-
-
 python main.py
-Access the frontend interface:
+## Access the frontend interface:
 Open your browser and navigate to https://llms-comparison.netlify.app/
 
 # Note
